@@ -29,7 +29,7 @@ This Python script automates the creation and activation of a virtual environmen
 2. **Run the Script**:
    - Execute the script using Python or double click the .py file:
      ```bash
-     python your_script_name.py
+     activate_env.py
      ```
      
 
@@ -37,3 +37,5 @@ This Python script automates the creation and activation of a virtual environmen
    - If prompted, enter the name for the new virtual environment.
 
 
+4. **Be patient**
+    - Installing the requirements.txt may take a few minutes.
