@@ -126,13 +126,13 @@ def activate_env():
 
 
 
-def create_code_folder():
+def create_folder(folder_name):
     """
-    Create a folder named 'code' if it does not exist.
+    Create a folder named 'folder_name' if it does not exist.
     """
-    if not os.path.exists('code'):
-        os.makedirs('code')
-        print("Folder 'code' created successfully.")
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+        print(f"Folder {folder_name} created successfully.")
 
 
 
@@ -140,10 +140,11 @@ if __name__ == '__main__':
     is_valid = first_initialize()
     if not is_valid:
         print("An error occurred while initializing the environment.")
+        input("Press any key to exit...")
         exit(1)
         
     # open cmd and activate the virtual environment
-    create_code_folder()
+    create_folder("src")
     
     # activate the virtual environment
     activate_env()
