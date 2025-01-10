@@ -21,7 +21,7 @@ def create_json_file(parm):
 
 def create_new_env(env_name):
     # Create a new virtual environment
-    subprocess.run(['cmd', '/c', f'virtualenv {env_name}_env'])
+    subprocess.run(['cmd', '/c', f'python -m virtualenv {env_name}_env'])
     print(f"Virtual environment {env_name} created successfully.\n\n\n")
 
 
